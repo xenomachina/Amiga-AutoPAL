@@ -1,0 +1,31 @@
+# smakefile for AutoPAL and AutoPALb
+
+all: AutoPAL AutoPALb
+
+AutoPAL: autopal.o
+    slink with <<
+TO AutoPAL
+FROM lib:cback.o AutoPAL.o
+LIB lib:sc.lib lib:amiga.lib
+NOICONS
+SC OD ND
+define ___main=___tinymain
+<
+
+AutoPALb: autopalb.o
+    slink with <<
+TO AutoPALb
+FROM lib:c.o AutoPALb.o
+LIB lib:sc.lib lib:amiga.lib
+SC OD ND
+define ___main=___tinymain
+NOICONS
+<
+
+autopalb.o: autopal.c
+    sc autopal.c DEBUG sf DEF _beta_ OBJNAME autopalb.o STKCHK
+
+
+autopal.o: autopal.c
+    sc autopal.c NODEBUG OBJNAME autopal.o NOSTKCHK
+
