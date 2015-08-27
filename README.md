@@ -3,7 +3,7 @@ automatically promote screens to PAL or NTSC based on various heuristics.
 
 Back when I started writing it I was in high school. I only every released
 binaries, which I uploaded to a few BBSes in the Toronto Ontario area. I
-remeber [Command Line BBS](http://www.amigareport.com/ar120/p2-1-10.html) in
+remember [Command Line BBS](http://www.amigareport.com/ar120/p2-1-10.html) in
 particular was an Amiga BBS I frequented.
 
 Recently, after I mentioned the existence of this tool, someone asked me if it
