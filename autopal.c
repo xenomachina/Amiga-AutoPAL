@@ -20,6 +20,10 @@
 #include <intuition/screens.h>
 
 #include <graphics/displayinfo.h>
+/* I believe this value comes from 3.x includes. */
+#ifndef DBL_MONITOR_ID
+#define DBL_MONITOR_ID 0x00080000
+#endif
 
 #include <dos/dos.h>
 
